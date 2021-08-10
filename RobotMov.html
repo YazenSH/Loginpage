@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RobotMovStyle.css">
+</head>
+
+<body>
+    <div class="container">
+      <button class="B">Forward</button> <br></br>
+      <button class="B">Left</button>
+      <button class="B">Stop</button>
+      <button class="B">Right</button> <br></br>
+      <button class="B">Backward</button>
+
+      <br> <a href="index.html"> <button class="BH" > HOME</button> </a> </br>
+
+    </div>
+    <script>
+      window.watsonAssistantChatOptions = {
+          integrationID: "7da9a887-c74c-400d-9eee-e7d3273a46c9", // The ID of this integration.
+          region: "eu-gb", // The region your integration is hosted in.
+          serviceInstanceID: "7ce0518e-78d0-4584-8c00-594ace1bf851", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+        document.head.appendChild(t);
+      });
+    </script>
+    </body>
+</html>
